@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="React," />
+  <meta name="keywords" content="iOS," />
 
 
 
@@ -51,23 +51,26 @@
 
 
 
-<meta name="description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
+<meta name="description" content="熟练掌握C/C++/Objective-C/Swift语言；
+熟悉Cocoa Touch(Foundation,UIKit)、Objective-C中block，gcd，NSOperation等；
+熟悉Object消息传递等机制，Objective-C Runtime,阅读源码；
+熟练使用大部分iOS平台常用库，开源库(AFNetworking，SDWebImage，fmdb)，开源控件(EGOT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React Native介绍">
-<meta property="og:url" content="http://subin.com.cn/2015/10/28/React/index.html">
+<meta property="og:title" content="iOS进阶学习笔记">
+<meta property="og:url" content="http://subin.com.cn/2016/01/02/iosup/index.html">
 <meta property="og:site_name" content="The Blog Of AbelSu">
-<meta property="og:description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
-<meta property="og:image" content="http://subin.com.cn/img/react.jpg">
-<meta property="og:updated_time" content="2016-01-02T13:47:12.000Z">
+<meta property="og:description" content="熟练掌握C/C++/Objective-C/Swift语言；
+熟悉Cocoa Touch(Foundation,UIKit)、Objective-C中block，gcd，NSOperation等；
+熟悉Object消息传递等机制，Objective-C Runtime,阅读源码；
+熟练使用大部分iOS平台常用库，开源库(AFNetworking，SDWebImage，fmdb)，开源控件(EGOT">
+<meta property="og:image" content="http://subin.com.cn/img/iOS01.jpg">
+<meta property="og:updated_time" content="2016-01-02T14:09:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React Native介绍">
-<meta name="twitter:description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
+<meta name="twitter:title" content="iOS进阶学习笔记">
+<meta name="twitter:description" content="熟练掌握C/C++/Objective-C/Swift语言；
+熟悉Cocoa Touch(Foundation,UIKit)、Objective-C中block，gcd，NSOperation等；
+熟悉Object消息传递等机制，Objective-C Runtime,阅读源码；
+熟练使用大部分iOS平台常用库，开源库(AFNetworking，SDWebImage，fmdb)，开源控件(EGOT">
 
 
 
@@ -79,7 +82,7 @@
   };
 </script>
 
-  <title> React Native介绍 | The Blog Of AbelSu </title>
+  <title> iOS进阶学习笔记 | The Blog Of AbelSu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,7 +222,7 @@
             
             
               
-                React Native介绍
+                iOS进阶学习笔记
               
             
           </h1>
@@ -228,8 +231,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-10-28T10:35:13+08:00" content="2015-10-28">
-              2015-10-28
+            <time itemprop="dateCreated" datetime="2016-01-02T22:07:13+08:00" content="2016-01-02">
+              2016-01-02
             </time>
           </span>
 
@@ -238,8 +241,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
                   </a>
                 </span>
 
@@ -254,8 +257,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/10/28/React/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/28/React/" itemprop="commentsCount"></span>
+                <a href="/2016/01/02/iosup/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/02/iosup/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -274,11 +277,22 @@
       
 
       
-        <span itemprop="articleBody"><p><img src="/img/react.jpg" alt="image"></p>
-<p>ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。</p>
-<p>而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">React <span class="keyword">Native</span> is the future</span><br><span class="line">Hello,React <span class="keyword">Native</span> :-)</span><br></pre></td></tr></table></figure>
-<p>感觉非常好。</p>
+        <span itemprop="articleBody"><p><img src="/img/iOS01.jpg" alt="image"></p>
+<ul>
+<li>熟练掌握C/C++/Objective-C/Swift语言；</li>
+<li>熟悉Cocoa Touch(Foundation,UIKit)、Objective-C中block，gcd，NSOperation等；</li>
+<li>熟悉Object消息传递等机制，Objective-C Runtime,阅读源码；</li>
+<li>熟练使用大部分iOS平台常用库，开源库(AFNetworking，SDWebImage，fmdb)，开源控件(EGOTableViewPullRefresh,MRProgress);</li>
+<li>关注github上iOS平台开源项目最近趋势，尝试fork一些著名开源库；</li>
+<li>iOS APP UI develop，熟练使用Interface Builder，理解ReactiveCocoa框架概念，阅读源码；</li>
+<li>理解Resful API概念，会使用Restkit,进行网络资源传输；</li>
+<li>理解Beeframework类hybird框架结构原理，掌握HTML5，CSS，JavaScript等前端知识，掌握jQuery等常用库；</li>
+<li>熟练使用各种工具debug，调试应用性能；</li>
+<li>使用Git进行版本控制管理；</li>
+<li>研究每年WWDC上推荐的最近方法技术，对代码进行重构升级；</li>
+<li>阅读iOS开发书籍，开发者博客（objc.io/shipster.com）;</li>
+<li>计算机基础知识，熟悉算法知识和编程.</li>
+</ul>
 </span>
       
     </div>
@@ -287,7 +301,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/React/" rel="tag">#React</a>
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
           
         </div>
       
@@ -296,13 +310,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/02/3dtouch/" rel="next" title="3D Touch开发技巧的笔记">
+                <i class="fa fa-chevron-left"></i> 3D Touch开发技巧的笔记
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/01/swift01/" rel="prev" title="Swift - 给图片和按钮添加阴影边框">
-                Swift - 给图片和按钮添加阴影边框 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -329,8 +343,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/10/28/React/"
-           data-title="React Native介绍" data-url="http://subin.com.cn/2015/10/28/React/">
+      <div class="ds-thread" data-thread-key="2016/01/02/iosup/"
+           data-title="iOS进阶学习笔记" data-url="http://subin.com.cn/2016/01/02/iosup/">
       </div>
     
   </div>

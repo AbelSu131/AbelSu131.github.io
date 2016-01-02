@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="React," />
+  <meta name="keywords" content="Swift," />
 
 
 
@@ -51,23 +51,29 @@
 
 
 
-<meta name="description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
+<meta name="description" content="Alamofire : Swift编写的HTTP网络库，用于异步网络通信。
+Surge: Surge基于Accelerate框架开发，用于执行矩阵数学、数字信号处理以及图像处理等方面。
+SwiftyJSON：SwiftyJSON使得用Swift处理JSON数据更加容易。
+Dollar.swift: Dollar是一个Swift库，提供了有用的函数式编程辅助方法。
+ExSwift：包含一组标准类型和">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React Native介绍">
-<meta property="og:url" content="http://subin.com.cn/2015/10/28/React/index.html">
+<meta property="og:title" content="Swift10大开源项目记录">
+<meta property="og:url" content="http://subin.com.cn/2016/01/02/swift02/index.html">
 <meta property="og:site_name" content="The Blog Of AbelSu">
-<meta property="og:description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
-<meta property="og:image" content="http://subin.com.cn/img/react.jpg">
-<meta property="og:updated_time" content="2016-01-02T13:47:12.000Z">
+<meta property="og:description" content="Alamofire : Swift编写的HTTP网络库，用于异步网络通信。
+Surge: Surge基于Accelerate框架开发，用于执行矩阵数学、数字信号处理以及图像处理等方面。
+SwiftyJSON：SwiftyJSON使得用Swift处理JSON数据更加容易。
+Dollar.swift: Dollar是一个Swift库，提供了有用的函数式编程辅助方法。
+ExSwift：包含一组标准类型和">
+<meta property="og:image" content="http://subin.com.cn/img/swift02.jpg">
+<meta property="og:updated_time" content="2016-01-02T02:38:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React Native介绍">
-<meta name="twitter:description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
+<meta name="twitter:title" content="Swift10大开源项目记录">
+<meta name="twitter:description" content="Alamofire : Swift编写的HTTP网络库，用于异步网络通信。
+Surge: Surge基于Accelerate框架开发，用于执行矩阵数学、数字信号处理以及图像处理等方面。
+SwiftyJSON：SwiftyJSON使得用Swift处理JSON数据更加容易。
+Dollar.swift: Dollar是一个Swift库，提供了有用的函数式编程辅助方法。
+ExSwift：包含一组标准类型和">
 
 
 
@@ -79,7 +85,7 @@
   };
 </script>
 
-  <title> React Native介绍 | The Blog Of AbelSu </title>
+  <title> Swift10大开源项目记录 | The Blog Of AbelSu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,7 +225,7 @@
             
             
               
-                React Native介绍
+                Swift10大开源项目记录
               
             
           </h1>
@@ -228,8 +234,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-10-28T10:35:13+08:00" content="2015-10-28">
-              2015-10-28
+            <time itemprop="dateCreated" datetime="2016-01-02T10:31:38+08:00" content="2016-01-02">
+              2016-01-02
             </time>
           </span>
 
@@ -238,8 +244,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/categories/Swift/" itemprop="url" rel="index">
+                    <span itemprop="name">Swift</span>
                   </a>
                 </span>
 
@@ -254,8 +260,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/10/28/React/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/28/React/" itemprop="commentsCount"></span>
+                <a href="/2016/01/02/swift02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/02/swift02/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -274,11 +280,19 @@
       
 
       
-        <span itemprop="articleBody"><p><img src="/img/react.jpg" alt="image"></p>
-<p>ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。</p>
-<p>而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">React <span class="keyword">Native</span> is the future</span><br><span class="line">Hello,React <span class="keyword">Native</span> :-)</span><br></pre></td></tr></table></figure>
-<p>感觉非常好。</p>
+        <span itemprop="articleBody"><p><img src="/img/swift02.jpg" alt="cat.jpg"></p>
+<ol>
+<li>Alamofire : Swift编写的HTTP网络库，用于异步网络通信。</li>
+<li>Surge: Surge基于Accelerate框架开发，用于执行矩阵数学、数字信号处理以及图像处理等方面。</li>
+<li>SwiftyJSON：SwiftyJSON使得用Swift处理JSON数据更加容易。</li>
+<li>Dollar.swift: Dollar是一个Swift库，提供了有用的函数式编程辅助方法。</li>
+<li>ExSwift：包含一组标准类型和类的Swift扩展。</li>
+<li>SwiftTask：Swift编写的状态机。</li>
+<li>HanekeSwift：Haneke是一个用Swift编写的轻量级iOS通用缓存，易于使用。</li>
+<li>Cartography: Swift声明Auto Layout.</li>
+<li>Sleipnir: 一个适用于Swift的BDD(Behavior Driven Development)风格框架。</li>
+<li>Quick: Quick是一个适用于Swift和Objective-C的行为驱动开发测试框架。</li>
+</ol>
 </span>
       
     </div>
@@ -287,7 +301,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/React/" rel="tag">#React</a>
+            <a href="/tags/Swift/" rel="tag">#Swift</a>
           
         </div>
       
@@ -296,12 +310,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/02/python01/" rel="next" title="Pythoner使用的豆瓣pip源">
+                <i class="fa fa-chevron-left"></i> Pythoner使用的豆瓣pip源
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/01/swift01/" rel="prev" title="Swift - 给图片和按钮添加阴影边框">
-                Swift - 给图片和按钮添加阴影边框 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/02/swift03/" rel="prev" title="女神画廊App (Swift1.2)">
+                女神画廊App (Swift1.2) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -329,8 +347,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/10/28/React/"
-           data-title="React Native介绍" data-url="http://subin.com.cn/2015/10/28/React/">
+      <div class="ds-thread" data-thread-key="2016/01/02/swift02/"
+           data-title="Swift10大开源项目记录" data-url="http://subin.com.cn/2016/01/02/swift02/">
       </div>
     
   </div>

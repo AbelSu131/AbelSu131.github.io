@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="React," />
+  <meta name="keywords" content="iOS," />
 
 
 
@@ -51,23 +51,23 @@
 
 
 
-<meta name="description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
+<meta name="description" content="iPhone6s以及iPhone6s plus搭载iOS9，有一个新功能叫做3D Touch，这个功能有很大的用处，关键是要会用，这给交互方式又多了一个新的选择和思考，比如说游戏中的额外控制选项、绘图应用中的细粒度(fine-grained)控制，甚至是用来替代我们在 iOS 设备中使用过的长按操作(tap-and-hold)的极佳选择。
+
+开发者可以通过非常简单的 API 来使用 3D Touc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React Native介绍">
-<meta property="og:url" content="http://subin.com.cn/2015/10/28/React/index.html">
+<meta property="og:title" content="3D Touch开发技巧的笔记">
+<meta property="og:url" content="http://subin.com.cn/2016/01/02/3dtouch/index.html">
 <meta property="og:site_name" content="The Blog Of AbelSu">
-<meta property="og:description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
-<meta property="og:image" content="http://subin.com.cn/img/react.jpg">
-<meta property="og:updated_time" content="2016-01-02T13:47:12.000Z">
+<meta property="og:description" content="iPhone6s以及iPhone6s plus搭载iOS9，有一个新功能叫做3D Touch，这个功能有很大的用处，关键是要会用，这给交互方式又多了一个新的选择和思考，比如说游戏中的额外控制选项、绘图应用中的细粒度(fine-grained)控制，甚至是用来替代我们在 iOS 设备中使用过的长按操作(tap-and-hold)的极佳选择。
+
+开发者可以通过非常简单的 API 来使用 3D Touc">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/763083/201509/763083-20150918102807617-1914706722.jpg">
+<meta property="og:updated_time" content="2016-01-02T13:59:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React Native介绍">
-<meta name="twitter:description" content="ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。
-而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.
-12React Native is the futureHel">
+<meta name="twitter:title" content="3D Touch开发技巧的笔记">
+<meta name="twitter:description" content="iPhone6s以及iPhone6s plus搭载iOS9，有一个新功能叫做3D Touch，这个功能有很大的用处，关键是要会用，这给交互方式又多了一个新的选择和思考，比如说游戏中的额外控制选项、绘图应用中的细粒度(fine-grained)控制，甚至是用来替代我们在 iOS 设备中使用过的长按操作(tap-and-hold)的极佳选择。
+
+开发者可以通过非常简单的 API 来使用 3D Touc">
 
 
 
@@ -79,7 +79,7 @@
   };
 </script>
 
-  <title> React Native介绍 | The Blog Of AbelSu </title>
+  <title> 3D Touch开发技巧的笔记 | The Blog Of AbelSu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,7 +219,7 @@
             
             
               
-                React Native介绍
+                3D Touch开发技巧的笔记
               
             
           </h1>
@@ -228,8 +228,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-10-28T10:35:13+08:00" content="2015-10-28">
-              2015-10-28
+            <time itemprop="dateCreated" datetime="2016-01-02T21:49:13+08:00" content="2016-01-02">
+              2016-01-02
             </time>
           </span>
 
@@ -238,8 +238,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
                   </a>
                 </span>
 
@@ -254,8 +254,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/10/28/React/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/28/React/" itemprop="commentsCount"></span>
+                <a href="/2016/01/02/3dtouch/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/02/3dtouch/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -274,11 +274,14 @@
       
 
       
-        <span itemprop="articleBody"><p><img src="/img/react.jpg" alt="image"></p>
-<p>ReactNative 可以基于目前大热的开源JavaScript库React.js来开发iOS和Android原生App。</p>
-<p>而且React Native已经用于生产环境——Facebook Groups iOS 应用就是基于它开发的。Facebook 在 React.js Conf 2015 大会上推出了 React Native.</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">React <span class="keyword">Native</span> is the future</span><br><span class="line">Hello,React <span class="keyword">Native</span> :-)</span><br></pre></td></tr></table></figure>
-<p>感觉非常好。</p>
+        <span itemprop="articleBody"><p>iPhone6s以及iPhone6s plus搭载iOS9，有一个新功能叫做3D Touch，这个功能有很大的用处，关键是要会用，这给交互方式又多了一个新的选择和思考，比如说游戏中的额外控制选项、绘图应用中的细粒度(fine-grained)控制，甚至是用来替代我们在 iOS 设备中使用过的长按操作(tap-and-hold)的极佳选择。</p>
+<p><img src="http://images2015.cnblogs.com/blog/763083/201509/763083-20150918102807617-1914706722.jpg" alt=""></p>
+<p>开发者可以通过非常简单的 API 来使用 3D Touch ，从根本上来说，也就是UITouch 的一个简单的新属性。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">touchesBegan</span><span class="params">(touches: Set&lt;UITouch&gt;, withEvent event: UIEvent?)</span></span> &#123;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">guard</span> <span class="keyword">let</span> touch = touches.first <span class="keyword">else</span> &#123; <span class="keyword">return</span> &#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span> traitCollection.forceTouchCapability == .<span class="type">Available</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">println</span>(<span class="string">"Touch pressure is <span class="subst">\(touch.force)</span>, maximum possible force is <span class="subst">\(touch.maximumPossibleForce)</span>"</span>)</span><br><span class="line"></span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>除了 UITouch 中新增的 API 外，苹果还为应用提供了两个用来增加3D Touch 功能的类集：UIPreviewAction 和 UIApplicationShortcutItem。</p>
+<p><strong>UIPreviewAction</strong>允许开发者在用户使用 3D Touch 功能触控一个 UI 元素的时候，快速地在一个新的预览窗口中显示某些内容。这种快速浏览应用特定内容的方式真的非常棒，比如说我们可以快速预览邮件信息、照片，甚至是网页内容，而无需弹出一个完整的视图控制器。</p>
+<p><strong>UIApplicationShortcutItem</strong>对象能够让 iOS 主屏幕激活一项令人惊叹的新特性。当用户使用 3D Touch 按下某个应用的图标时，一个选项列表就会被弹出，允许用户快速跳转至应用的特定部分，或者执行某项应用内的功能。</p>
+<p>总而言之，3D Touch 的引入给 iOS 设备提供了一个全新的交互方式，并且将会给接下来的 iOS 应用带来新一代的创新。关于3D Touch 的实例代码和相关信息可以在苹果开发者网站<a href="https://developer.apple.com/ios/3d-touch/" target="_blank" rel="external">https://developer.apple.com/ios/3d-touch/</a>参考。</p>
 </span>
       
     </div>
@@ -287,7 +290,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/React/" rel="tag">#React</a>
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
           
         </div>
       
@@ -296,12 +299,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/02/jianli/" rel="next" title="简历·苏斌">
+                <i class="fa fa-chevron-left"></i> 简历·苏斌
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/01/swift01/" rel="prev" title="Swift - 给图片和按钮添加阴影边框">
-                Swift - 给图片和按钮添加阴影边框 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/02/iosup/" rel="prev" title="iOS进阶学习笔记">
+                iOS进阶学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -329,8 +336,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/10/28/React/"
-           data-title="React Native介绍" data-url="http://subin.com.cn/2015/10/28/React/">
+      <div class="ds-thread" data-thread-key="2016/01/02/3dtouch/"
+           data-title="3D Touch开发技巧的笔记" data-url="http://subin.com.cn/2016/01/02/3dtouch/">
       </div>
     
   </div>
